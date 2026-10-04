@@ -1,0 +1,35 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "schema_version": "NX-IDENTITY-001",
+  "version": "0.1.0",
+  "entity": {
+    "name": "NEXORA",
+    "namespace": "nexoracontrol-ops",
+    "github_organization": "https://github.com/nexoracontrol-ops",
+    "identity_status": "SELF_ASSERTED_TECHNICAL_IDENTITY"
+  },
+  "separation_of_concerns": {
+    "identity": "Identifies the publisher of an artifact.",
+    "evidence": "Supports a factual claim about an artifact, event, or observation.",
+    "authority": "Determines whether an actor is permitted to authorize an action.",
+    "state": "Records a committed state transition.",
+    "provenance": "Binds an artifact to source, version, hash, and release metadata."
+  },
+  "claims": [
+    {
+      "claim_id": "NX-ID-001",
+      "claim": "The nexoracontrol-ops GitHub organization is the publishing namespace for NEXORA technical artifacts.",
+      "status": "ASSERTED",
+      "evidence_refs": [
+        "github:org:nexoracontrol-ops",
+        "github:repo:nexoracontrol-ops/.github"
+      ]
+    }
+  ],
+  "non_claims": [
+    "This document does not establish legal incorporation.",
+    "This document does not establish ownership of customer assets.",
+    "This document does not grant authority over external systems.",
+    "This document does not certify security or regulatory compliance."
+  ]
+}
