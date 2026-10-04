@@ -1,0 +1,29 @@
+name: nxverify
+
+on:
+  push:
+    paths:
+      - "tools/nxverify/**"
+      - "schemas/evidence-v0.1.schema.json"
+  pull_request:
+    paths:
+      - "tools/nxverify/**"
+      - "schemas/evidence-v0.1.schema.json"
+
+permissions:
+  contents: read
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: tools/nxverify
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-go@v5
+        with:
+          go-version: "1.22.x"
+          cache-dependency-path: tools/nxverify/go.mod
+      - run: go test ./...
+      - run: go vet ./...
