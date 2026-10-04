@@ -1,0 +1,15 @@
+{
+  "schema_version": "NX-PROVENANCE-001",
+  "version": "0.1.0",
+  "publisher": "nexoracontrol-ops",
+  "repository": "https://github.com/nexoracontrol-ops/.github",
+  "artifacts": [
+    {"path":"profile/README.md","commit":"80477c3134a8777b8ebd43c429da770aa6d99f31"},
+    {"path":"identity/identity.json","commit":"088148bcb8ce74c90e495d7d450f45f3f5830c8e"},
+    {"path":"evidence/index.json","commit":"d515a0bf86189ef287853a39ec472d02ced89ed3"},
+    {"path":"schemas/evidence-v0.1.schema.json","commit":"698c3baa637fd4b8453d6d6c9f90a2fadb333522"},
+    {"path":"tools/nxverify/main.go","commit":"fc809643f6fcbfb875dbab90b4bc0fb719642d2a"},
+    {"path":"tools/nxverify/go.mod","commit":"c2cf12ce843153ba51df6533b3df8f66758e3c0e"},
+    {"path":"tools/nxverify/main_test.go","commit":"3521cb28a61482d38774341fd11fc4f9c3953ba9"}
+  ]
+}
