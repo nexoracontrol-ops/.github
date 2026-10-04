@@ -1,0 +1,15 @@
+{
+  "schema_version": "NX-LEGAL-IDENTITY-001",
+  "version": "0.1.0",
+  "entity": "NEXORA",
+  "status": "NOT_ASSERTED",
+  "reason": "No legal registration identifier or incorporation evidence has been supplied for publication.",
+  "rule": "Do not infer or fabricate legal entity status from a GitHub organization.",
+  "required_future_evidence": [
+    "legal_name",
+    "jurisdiction",
+    "registration_identifier",
+    "official_registry_source",
+    "authorized_signatory"
+  ]
+}
