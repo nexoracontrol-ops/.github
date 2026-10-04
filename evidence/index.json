@@ -31,6 +31,15 @@
       "source": "github://nexoracontrol-ops/.github",
       "verification": "JSON_SCHEMA",
       "status": "PUBLISHED"
+    },
+    {
+      "evidence_id": "NX-EVID-0004",
+      "type": "VERIFIER",
+      "subject": "Deterministic Evidence Verifier",
+      "artifact": "tools/nxverify",
+      "source": "github://nexoracontrol-ops/.github",
+      "verification": "GO_SOURCE_AND_TEST",
+      "status": "PUBLISHED"
     }
   ]
 }
