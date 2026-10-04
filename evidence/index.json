@@ -1,0 +1,36 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "schema_version": "NX-EVIDENCE-INDEX-001",
+  "version": "0.1.0",
+  "publisher": "nexoracontrol-ops",
+  "status": "INITIAL",
+  "entries": [
+    {
+      "evidence_id": "NX-EVID-0001",
+      "type": "IDENTITY",
+      "subject": "NEXORA",
+      "artifact": "identity/identity.json",
+      "source": "github://nexoracontrol-ops/.github",
+      "verification": "PUBLIC_GIT_CONTENT",
+      "status": "PUBLISHED"
+    },
+    {
+      "evidence_id": "NX-EVID-0002",
+      "type": "POLICY",
+      "subject": "Identity & Evidence Layer v0.1",
+      "artifact": "profile/README.md",
+      "source": "github://nexoracontrol-ops/.github",
+      "verification": "PUBLIC_GIT_CONTENT",
+      "status": "PUBLISHED"
+    },
+    {
+      "evidence_id": "NX-EVID-0003",
+      "type": "SCHEMA",
+      "subject": "Evidence Record v0.1",
+      "artifact": "schemas/evidence-v0.1.schema.json",
+      "source": "github://nexoracontrol-ops/.github",
+      "verification": "JSON_SCHEMA",
+      "status": "PUBLISHED"
+    }
+  ]
+}
