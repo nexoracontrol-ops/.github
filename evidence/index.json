@@ -40,6 +40,24 @@
       "source": "github://nexoracontrol-ops/.github",
       "verification": "GO_SOURCE_AND_TEST",
       "status": "PUBLISHED"
+    },
+    {
+      "evidence_id": "NX-EVID-0005",
+      "type": "LEGAL_IDENTITY_STATUS",
+      "subject": "NEXORA",
+      "artifact": "identity/legal-identity.json",
+      "source": "github://nexoracontrol-ops/.github",
+      "verification": "EXPLICIT_NON_ASSERTION",
+      "status": "NOT_ASSERTED"
+    },
+    {
+      "evidence_id": "NX-EVID-0006",
+      "type": "PROVENANCE",
+      "subject": "Initial artifact provenance",
+      "artifact": "provenance/manifest.json",
+      "source": "github://nexoracontrol-ops/.github",
+      "verification": "GIT_COMMIT_REFERENCES",
+      "status": "PUBLISHED"
     }
   ]
 }
