@@ -1,0 +1,33 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/nexoracontrol-ops/.github/blob/main/schemas/evidence-v0.1.schema.json",
+  "title": "NEXORA Evidence Record v0.1",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["evidence_id", "schema_version", "subject", "claim", "source", "observed_at", "status"],
+  "properties": {
+    "evidence_id": {"type": "string", "pattern": "^NX-EVID-[0-9A-Z-]+$"},
+    "schema_version": {"const": "NX-EVIDENCE-001/v0.1"},
+    "subject": {"type": "string", "minLength": 1},
+    "claim": {"type": "string", "minLength": 1},
+    "source": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["kind", "locator"],
+      "properties": {
+        "kind": {"enum": ["git", "http", "file", "api", "ledger", "document", "human"]},
+        "locator": {"type": "string", "minLength": 1}
+      }
+    },
+    "observed_at": {"type": "string", "format": "date-time"},
+    "observed_by": {"type": "string"},
+    "content_hash": {
+      "type": "string",
+      "pattern": "^sha256:[0-9a-f]{64}$"
+    },
+    "artifact_version": {"type": "string"},
+    "authority_ref": {"type": "string"},
+    "status": {"enum": ["ASSERTED", "SUPPORTED", "VERIFIED", "REJECTED", "SUPERSEDED"]},
+    "notes": {"type": "string"}
+  }
+}
